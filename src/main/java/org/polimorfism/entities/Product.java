@@ -2,8 +2,8 @@ package org.polimorfism.entities;
 
 public class Product {
 
-    String name;
-    Double price;
+    private String name;
+    private Double price;
 
     public Product() {
 

@@ -2,7 +2,7 @@ package org.polimorfism.entities;
 
 public class ImportedProduct extends Product {
 
-    Double customFee;
+    private Double customFee;
 
     public ImportedProduct() {
         super();
@@ -15,7 +15,7 @@ public class ImportedProduct extends Product {
 
     @Override
     public String priceTag() {
-        return "Name: " + name +
+        return "Name: " + getName() +
                 String.format(" Price: $%.2f", totalPrice()) + String.format(" (Custom fee : $%.2f)", customFee);
     }
 
